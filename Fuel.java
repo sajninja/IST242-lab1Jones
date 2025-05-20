@@ -1,4 +1,3 @@
-public class Fuel {
-
-
+public enum Fuel {
+    GASOLINE, DIESEL, ROCKET_FUEL, FISSILE_FUEL, VEGETABLE_OIL
 }

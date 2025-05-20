@@ -1,4 +1,4 @@
-class Frame {
+public class Frame {
     private Material material;
     private Size frameType;
 

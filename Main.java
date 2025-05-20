@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String makeBike = "";
+        String makeBike;
 
         System.out.println("Let's make a motorcycle!");
         System.out.println();
         do {
-            Motorcycle motorcycle = new Motorcycle("", new Frame(Material.STEEL, Size.STANDARD), "", new Engine(Size.STANDARD, 1.0), new Wheel(1.0), new Wheel(1.0), FuelType.GASOLINE);
+            Motorcycle motorcycle = new Motorcycle("", new Frame(Material.STEEL, Size.STANDARD), "", new Engine(Size.STANDARD, 1.0), new Wheel(1.0), new Wheel(1.0), Fuel.GASOLINE);
 
             System.out.println("What color will it be?");
             String color = scanner.nextLine();
@@ -61,8 +61,8 @@ public class Main {
             motorcycle.backWheel.setLength(backWheelLength);
 
             System.out.println("What will it be fueled with?");
-            for (int i = 0; i < FuelType.values().length; i++) {
-                System.out.print((i + 1) +": " + FuelType.values()[i] + "     ");
+            for (int i = 0; i < Fuel.values().length; i++) {
+                System.out.print((i + 1) +": " + Fuel.values()[i] + "     ");
             }
             System.out.println();
             int fuelIndex = scanner.nextInt();
