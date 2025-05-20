@@ -1,0 +1,3 @@
+public enum FuelType {
+    GASOLINE, DIESEL, ROCKET_FUEL, FISSILE_FUEL, VEGETABLE_OIL
+}
