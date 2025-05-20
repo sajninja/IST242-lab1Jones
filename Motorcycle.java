@@ -73,7 +73,6 @@ public class Motorcycle {
         }
         if (!decal.isEmpty()) {
             System.out.println("Your sweet decal attracts attention and turns heads your way.");
-            return;
         }
     }
 
